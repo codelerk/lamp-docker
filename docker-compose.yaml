@@ -7,6 +7,8 @@ services:
     restart: always
     volumes:
       - "./html/:/var/www/html/"
+      - "./logs/:/var/log/apache2/"
+      - "./php/:/usr/local/etc/php/"
     ports:
       - "80:80"
   mysql-server:
