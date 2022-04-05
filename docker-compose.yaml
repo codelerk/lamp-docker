@@ -10,7 +10,7 @@ services:
       - "./logs/:/var/log/apache2/"
       - "./php/:/usr/local/etc/php/"
     ports:
-      - "80:80"
+      - "1024:80"
   mysql-server:
     image: mariadb:latest
     environment:
